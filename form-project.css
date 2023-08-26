@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #9570f8, #8981fb, #828ffb, #809cf8, #84a7f3, #79b1f7, #71baf8, #6dc3f8, #48cefa, #0ed8f6, #00e1eb, #0fe9da);
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    margin-bottom: 20px;
+}
+
+/* fieldSet */
+fieldset{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: white;
+    border-radius: 3px;
+}
+legend{
+   font-size: 20px;
+}
+/* end of fieldSet */
+
+/* form */
+form{
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+select{
+    display: inline-block;
+    width: 103px;
+    text-align: center;
+}
+
+.nameInput, .emailInput, .dateInput{
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aboutInput{
+    display: flex;
+    flex-direction: column;
+}
+
+.nameInput,
+.emailInput,
+.dateInput input{
+    width: 200px;
+}
+
+textarea{
+    resize: none;
+}
+
+#submitBtn{
+    width: 100%;
+    font-size: 17px;
+    padding: 5px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+/* end of form */

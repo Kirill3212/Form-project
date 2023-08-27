@@ -12,6 +12,10 @@ body{
     background-image: linear-gradient(to right top, #9570f8, #8981fb, #828ffb, #809cf8, #84a7f3, #79b1f7, #71baf8, #6dc3f8, #48cefa, #0ed8f6, #00e1eb, #0fe9da);
     display: flex;
     flex-direction: column;
+    font-family: 'Changa One', cursive;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Playfair Display', serif;
 }
 
 
@@ -21,8 +25,9 @@ body{
     top: 40px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 20px;
+    font-size: 25px;
     display: none;
+    color: yellow;
 }
 /* end of spinner */
 
@@ -40,8 +45,8 @@ legend{
    font-size: 25px;
    font-weight: 600;
    background-color:#828ffb;
-   color: black;
-   padding: 5px 15px;
+   color: rgb(25, 29, 54);
+   padding: 4px 13px;
    border-radius: 3px;
    outline: 2px inset rgba(170, 50, 220, .6);
 }
@@ -73,6 +78,10 @@ select{
     flex-direction: column;
 }
 
+.aboutInput label{
+    color: rgb(193, 0, 0);
+}
+
 .nameInput,
 .emailInput,
 .dateInput input{
@@ -81,11 +90,17 @@ select{
 
 label{
     font-weight: 600;
+    margin-bottom: 3px;
 }
 
 textarea{
     resize: none;
     margin-top: 6px;
+    overflow:auto;
+    padding: 7px;
+    text-indent: 15px;
+    text-align: justify;
+    word-spacing: normal
 }
 
 #submitBtn{
@@ -95,5 +110,12 @@ textarea{
     background-color: green;
     color: white;
     cursor: pointer;
+}
+
+#submitBtn:hover{
+    opacity: 0.9;
+}
+#submitBtn:active{
+    background-color: darkgreen;
 }
 /* end of form */

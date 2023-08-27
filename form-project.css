@@ -13,9 +13,18 @@ body{
     display: flex;
     flex-direction: column;
 }
-h1{
-    margin-bottom: 20px;
+
+
+/* spinner */
+#spinner {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    display: none;
 }
+/* end of spinner */
 
 /* fieldSet */
 fieldset{
@@ -23,11 +32,18 @@ fieldset{
     height: 500px;
     border: 1px solid black;
     padding: 20px;
-    background-color: white;
     border-radius: 3px;
+    background-color: white;
 }
+
 legend{
-   font-size: 20px;
+   font-size: 25px;
+   font-weight: 600;
+   background-color:#828ffb;
+   color: black;
+   padding: 5px 15px;
+   border-radius: 3px;
+   outline: 2px inset rgba(170, 50, 220, .6);
 }
 /* end of fieldSet */
 
@@ -60,17 +76,22 @@ select{
 .nameInput,
 .emailInput,
 .dateInput input{
-    width: 200px;
+    width: 207px;
+}
+
+label{
+    font-weight: 600;
 }
 
 textarea{
     resize: none;
+    margin-top: 6px;
 }
 
 #submitBtn{
     width: 100%;
     font-size: 17px;
-    padding: 5px;
+    padding: 5px 5px;
     background-color: green;
     color: white;
     cursor: pointer;

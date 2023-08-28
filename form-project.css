@@ -34,7 +34,6 @@ body{
 /* fieldSet */
 fieldset{
     width: 500px;
-    height: 500px;
     border: 1px solid black;
     padding: 20px;
     border-radius: 3px;
@@ -117,5 +116,21 @@ textarea{
 }
 #submitBtn:active{
     background-color: darkgreen;
+}
+
+.user-data{
+    display: none;
+    margin-top: 8px;
+    width: 100%;
+    background-color: #828ffb;
+    border: 2px solid rgba(170, 50, 220, .6);
+    color: rgb(193, 0, 0);
+    padding: 5px;
+    font-weight: 600;
+}
+
+.user-data-input{
+    font-size: 14px;
+    color: black;
 }
 /* end of form */
